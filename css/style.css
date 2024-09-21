@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(254, 250, 239);
+}
+
+#globalnav ul {
+    padding: 20px;
+    background-color: bisque;
+    text-align: right;
+}
+
+#globalnav li {
+    display: inline;
+}
+
+.navlink {
+    color: rgb(67, 39, 12);
+    text-decoration: none;
+    padding: 20px 30px;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+.navlink:hover {
+    background-color: rgb(67, 39, 12);
+    color: white;
+}
