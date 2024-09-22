@@ -16,11 +16,12 @@ h1, h2 {
 
 h1 {
     font-size: 3em;
+    margin-bottom: 50px;
 }
 
 p {
     font-family: Arima, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 #style-page {
@@ -44,12 +45,13 @@ p {
 #globalnav li {
     display: inline-block;
     position: relative;
+    margin: 0px 10px;
 }
 
 .navlink {
     color: rgb(67, 39, 12);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     font-family: 'Dancing Script', serif;
     font-size: 1.75em;
     font-weight: 700;
@@ -78,8 +80,6 @@ p {
     transform-origin: bottom left;
 }
 
-
-
 .headimage {
     width: 100%;
 }
@@ -87,6 +87,11 @@ p {
 #highlight {
     font-weight: 700;
     color: #D53D34;
+}
+
+.divider {
+    border: 2px solid black;
+    margin: 80px 40px;
 }
 
 .rsvp-btn {
@@ -108,3 +113,24 @@ p {
     background-color:#417564;
     color: white;
 }
+
+/*countdown timer style*/
+.countdown-style {
+    font-family: "Gravitas One", serif;
+    text-align: center;
+    color: #D53D34;
+    font-size: 5em;
+    margin: 0;
+  }
+
+  #countdown-caption-container {
+    text-align: center;
+  }
+
+  .countdown-caption {
+    display: inline-block;
+    margin: -20px 50px 0px 50px;
+    font-size: 0.8em;
+    color: #D53D34;
+    margin-top: -20px;
+  }
