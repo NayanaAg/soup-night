@@ -9,16 +9,20 @@ body {
     background-color: #3C1F01;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family:'Dancing Script', serif;
     font-weight: 700;
+}
+
+p {
+    font-family: Arima, sans-serif;
+    font-size: 1em;
 }
 
 #style-page {
     background-color: white;
     margin: auto;
     margin-top: 80px;
-    height: 100%;
     max-width: 70%;
 }
 
@@ -46,4 +50,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navlink:hover {
     text-decoration: underline;
+}
+
+.headimage {
+    width: 100%;
+    margin: -20px 0;
+}
+
+#highlight {
+    font-weight: 700;
+    color: #D53D34;
+}
+
+.rsvp-btn {
+    background-color: #5B9D87;
 }
