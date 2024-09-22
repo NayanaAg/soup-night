@@ -11,6 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'Dancing Script', serif;
+    font-weight: 700;
 }
 
 #style-page {
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 20px;
     font-family: 'Dancing Script', serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .navlink:hover {
