@@ -143,7 +143,12 @@ p {
   .quiz-tile {
     width: 100%;
     object-fit: cover;
-    padding: 20px 20px 20px 0px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  .quiz-tile:hover {
+    outline: 8px solid #F1B533;
   }
 
   .bold-caption {
@@ -154,14 +159,16 @@ p {
 
   /*meet the chefs*/
   .chef-img {
-    margin: 20px;
-    width: 90%;
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
     border: 15px double #919191;
+    background-color: #d8d8d8;
     border-radius: 50%;
   }
 
   .chef-desc {
     font-size: 0.9em;
     padding: 0;
-    margin: 0;
+    margin-bottom: 50px;
   }
