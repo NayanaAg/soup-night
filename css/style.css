@@ -172,3 +172,14 @@ p {
     padding: 0;
     margin-bottom: 50px;
   }
+
+  #aboutpic {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #aboutcap {
+    font-size: 0.8em;
+    font-style: italic;
+    padding-left: 20px;
+  }
