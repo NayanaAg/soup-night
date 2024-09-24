@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -35,8 +34,8 @@ p {
     max-width: 70%;
 }
 
-/*global navigation styles*/
 
+/*global navigation styles*/
 #globalnav {
     margin-top: 20px;
 }
@@ -83,6 +82,8 @@ p {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+/*navigation end*/
+
 
 .headimage {
     width: 100%;
@@ -118,6 +119,7 @@ p {
     color: white;
 }
 
+
 /*countdown timer style*/
 .countdown-style {
     font-family: "Gravitas One", serif;
@@ -146,6 +148,8 @@ p {
     color: #D53D34;
     margin-top: -20px;
   }
+  /*countdown end*/
+
 
   /*soup quiz tiles*/
   .quiz-tile {
@@ -164,6 +168,8 @@ p {
     text-align: center;
     font-weight: 700;
   }
+  /*quiz tile end*/
+
 
   /*meet the chefs*/
   .chef-img {
