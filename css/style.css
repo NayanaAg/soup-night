@@ -123,17 +123,25 @@ p {
     font-family: "Gravitas One", serif;
     text-align: center;
     color: #D53D34;
-    font-size: 5em;
     margin-top: 30px;
+    max-width: 100%;
+    font-size: 4vw;
+  }
+  
+  @media screen and (max-width:992px) {
+    .countdown-style {
+      font-size: 10vw;
+    }
   }
 
   #countdown-caption-container {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0% 5%;
   }
 
   .countdown-caption {
     display: inline-block;
-    margin: -20px 50px 0px 50px;
     font-size: 0.8em;
     color: #D53D34;
     margin-top: -20px;

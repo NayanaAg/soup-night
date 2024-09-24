@@ -14,7 +14,9 @@
     <!--linking google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Gravitas+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Gravitas+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -38,25 +40,32 @@
 
         <main>
             <div class="container">
+                <!--countdown with Javascript (see script tag at bottom)-->
                 <div class="row">
                     <div class="col-md-12">
                         <img class="headimage" src="img/soupheader.png" alt="various bowls of soup">
+                    </div>
+                    <div class="col-md-6 offset-md-3">
                         <p class="countdown-style" id="countdown-js"></p>
                         <div id="countdown-caption-container">
-                            <p class="countdown-caption">days</p><p class="countdown-caption">hours</p>
-                            <p class="countdown-caption">minutes</p><p class="countdown-caption">seconds</p>
+                            <p class="countdown-caption">days</p>
+                            <p class="countdown-caption">hours</p>
+                            <p class="countdown-caption">minutes</p>
+                            <p class="countdown-caption">seconds</p>
                         </div>
                         <hr class="divider">
-                    </div>  
+                    </div>
                 </div>
+                <!--countdown end-->
 
                 <div class="row">
-                    <div class="col-md-8 offset-sm-2">
+                    <div class="col-md-8 offset-md-2">
                         <h1>Welcome to a night of delicious soup.</h1>
                         <p>Do you identify as a soup lover? are you interested in trying comfort foods from around the
                             world?</p>
 
-                        <p id="highlight">Join me and my friends for our first ever Soup Night on November 5th at 7pm.</p>
+                        <p id="highlight">Join me and my friends for our first ever Soup Night on November 5th at 7pm.
+                        </p>
 
                         <p>We will each bring a large pot of our favourite soup for the rest of the group to try, and
                             together we can argue about our shared soup tier list. There will also be soup trivia,
@@ -75,37 +84,37 @@
         </main>
     </div>
 
-<script>
-// Countdown code from W3Schools
-// Set the date we're counting down to
-var countDownDate = new Date("Nov 5, 2024 19:00:00").getTime();
+    <script>
+        // Countdown code from W3Schools
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 5, 2024 19:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-// Get today's date and time
-var now = new Date().getTime();
-    
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
-    
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-// Output the result in an element with id="demo"
-document.getElementById("countdown-js").innerHTML = days + ":" + hours + ":"
-+ minutes + ":" + seconds ;
-    
-// If the count down is over, write some text 
-if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown-js").innerHTML = "soup night has ended.";
-  }
-}, 1000);
-</script>
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown-js").innerHTML = days + ":" + hours + ":"
+                + minutes + ":" + seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-js").innerHTML = "soup night has ended.";
+            }
+        }, 1000);
+    </script>
 
 </body>
 
