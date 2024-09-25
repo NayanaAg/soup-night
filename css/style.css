@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+:root {
+  --emphasis-color: #D53D34;
+  --action-color: #5B9D87;
+  --accent-color: #F1B533;
+}
+
 body {
     background-color: #3C1F01;
 }
@@ -62,7 +68,7 @@ p {
 }
 
 .navlink:hover {
-    color: #5B9D87;
+    color: var(--action-color);
 }
 
 .navlink::after {
@@ -73,7 +79,7 @@ p {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #5B9D87;
+    background-color: var(--action-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -91,7 +97,7 @@ p {
 
 #highlight {
     font-weight: 700;
-    color: #D53D34;
+    color: var(--emphasis-color);
 }
 
 .divider {
@@ -102,7 +108,7 @@ p {
 .rsvp-btn {
     text-decoration: none;
     padding: 10px;
-    background-color: #5B9D87;
+    background-color: var(--action-color);
     color: black;
     font-family: "Dancing Script", serif;
     font-size: 1.5em;
@@ -115,16 +121,17 @@ p {
 }
 
 .rsvp-btn:hover {
-    background-color:#417564;
+    background-color:var(--action-color);
     color: white;
 }
 
 
 /*countdown timer style*/
 .countdown-style {
-    font-family: "Gravitas One", serif;
+    font-family: "Anonymous Pro", serif;
+    font-weight: 700;
     text-align: center;
-    color: #D53D34;
+    color: var(--emphasis-color);
     margin-top: 30px;
     max-width: 100%;
     font-size: 4vw;
@@ -145,7 +152,7 @@ p {
   .countdown-caption {
     display: inline-block;
     font-size: 0.8em;
-    color: #D53D34;
+    color: var(--emphasis-color);
     margin-top: -20px;
   }
   /*countdown end*/
@@ -160,7 +167,7 @@ p {
   }
 
   .quiz-tile:hover {
-    outline: 8px solid #F1B533;
+    outline: 8px solid var(--accent-color);
   }
 
   .bold-caption {

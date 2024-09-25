@@ -14,9 +14,10 @@
     <!--linking google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Gravitas+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--linking custom javascript file-->
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -82,39 +83,6 @@
             </div>
         </main>
     </div>
-
-    <script>
-        // Countdown code from W3Schools
-        // Set the date we're counting down to
-        var countDownDate = new Date("Nov 5, 2024 19:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("countdown-js").innerHTML = days + ":" + hours + ":"
-                + minutes + ":" + seconds;
-
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown-js").innerHTML = "soup night has ended.";
-            }
-        }, 1000);
-    </script>
-
 </body>
 
 </html>
