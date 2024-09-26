@@ -130,6 +130,8 @@ strong {
   border-radius: 20px;
   margin: 40px 0;
   transition: 0.5s;
+  border: none;
+  outline: none;
 }
 
 .btn-primary:hover {
@@ -146,7 +148,7 @@ strong {
   color: var(--emphasis-color);
   margin-top: 30px;
   max-width: 100%;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 @media screen and (max-width:992px) {
