@@ -207,6 +207,7 @@ strong {
   padding: 0;
   margin-bottom: 50px;
 }
+
 /*chef tiles end*/
 
 /*about page styling*/
@@ -233,17 +234,12 @@ strong {
 
 /*testimonial section*/
 /*uses code snippets from W3 schools*/
-
 #testimonial-bg {
   position: relative;
   outline: 2px solid #cccccc;
   border-radius: 15px;
   text-align: center;
   padding: 50px;
-}
-
-.carousel-inner {
-  padding: 40px 100px !important;
 }
 
 .carousel-control-prev-icon {
@@ -258,14 +254,38 @@ strong {
   background-color: var(--emphasis-color);
 }
 
+blockquote {
+  position: relative;
+  margin: 5%;
+  padding: 4% 8%;
+  text-align: justify;
+}
+
 blockquote:before {
   font-family: var(--body-font);
-  font-size: 10em;
+  color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  font-size: 6em;
   content: "\201C";
+  padding-left: -50px;
 }
 
 blockquote:after {
   font-family: var(--body-font);
-  font-size: 10em;
+  color: var(--accent-color);
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: -0.5em;
+  font-size: 6em;
   content: "\201D";
+}
+/*testimonial end*/
+
+/*contact form*/
+#contact-form {
+  background-color: #fff;
 }
