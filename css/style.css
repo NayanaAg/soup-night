@@ -277,9 +277,8 @@ blockquote:after {
   font-family: var(--body-font);
   color: var(--accent-color);
   position: absolute;
-  float: right;
   right: 0;
-  bottom: -0.5em;
+  bottom: 0;
   font-size: 6em;
   content: "\201D";
 }
