@@ -1,7 +1,8 @@
 <!DOCTYPE html lang="en">
 <html>
-    <head>
-    <Title>about me</Title>
+
+<head>
+    <Title>about nayana (me!)</Title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,45 +15,94 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Gravitas+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&display=swap"
         rel="stylesheet">
-    </head>
 
-    <body>
-        <div id="style-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <header>
-                            <nav id="globalnav">
-                                <ul>
-                                    <li><a class="navlink" href="../index.html">home</a></li>
-                                    <li><a class="navlink" href="details.html">how to join</a></li>
-                                    <li><a class="navlink" href="about.html">about me</a></li>
-                                </ul>
-                            </nav>
-                        </header>
-                    </div>
+    <!--linking custom javascript file-->
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+    <div id="style-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <nav id="globalnav">
+                            <ul>
+                                <li><a class="navlink" href="../index.html">home</a></li>
+                                <li><a class="navlink" href="details.html">how to join</a></li>
+                                <li><a class="navlink" href="about.html">about me</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="row align-items-end">
+                <div class="col-md-5 offset-md-1">
+                    <h1>Hello! I'm Nayana, and I love goofing off with my friends :)</h1>
+                </div>
+                <div class="col-md-5">
+                    <img id="aboutpic" src="../img/aboutme.jpg" alt="Nayana posing in front of a cheese house">
+                    <p id="aboutcap">Me posing with a cheese house we built for a friend's birthday!</p>
                 </div>
             </div>
 
-            <main class="container">
-                <div class="row align-items-end">
-                    <div class="col-md-5 offset-md-1">
-                        <h1>Hello! I'm Nayana, and I love goofing off with my friends :)</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <img id="aboutpic" src="../img/aboutme.jpg" alt="Nayana posing in front of a cheese house">
-                        <p id="aboutcap">Me posing with a cheese house we built for a friend's birthday!</p>
-                    </div>
-                </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h2>See what my friends are saying</h2>
+                    <p>I promise these testimonials were not forced :) </p>
 
-                <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,</p>
-                    </div>
+                    <!--Testimonial slider code adapted from Boostrap documentation-->
+
+                    <div id="testimonial-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner" id="testimonial-bg">
+                          <div class="carousel-item active">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                                mattis tellus. Sed dignissim, metus nec fringilla accumsan, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                                dignissim, metus nec fringilla accumsan,</p>
+                          </div>
+
+                          <div class="carousel-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                                mattis tellus. Sed dignissim, metus nec fringilla accumsan, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                                dignissim, metus nec fringilla accumsan,</p>
+                          </div>
+
+                          <div class="carousel-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                                mattis tellus. Sed dignissim, metus nec fringilla accumsan, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                                dignissim, metus nec fringilla accumsan,</p>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slider" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slider" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
                 </div>
-            </main>
-        </div>
-    </body>
+            </div>
+        </main>
+    </div>
+</body>
+
 </html>

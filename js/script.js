@@ -1,4 +1,5 @@
 // Countdown code from W3Schools
+
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 5, 2024 19:00:00").getTime();
 
@@ -27,3 +28,9 @@ var x = setInterval(function () {
         document.getElementById("countdown-js").innerHTML = "soup night has ended.";
     }
 }, 1000);
+// Countdown end
+
+
+$('.carousel').carousel({
+    interval: 2000
+  })
