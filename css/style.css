@@ -207,16 +207,26 @@ strong {
   padding: 0;
   margin-bottom: 50px;
 }
+/*chef tiles end*/
 
-#aboutpic {
+/*about page styling*/
+#about-pic {
   width: 100%;
   padding: 20px;
+  border: 15px double #919191;
+  background-color: #d8d8d8;
+  border-radius: 50%;
 }
 
-#aboutcap {
+.about-text {
+  font-size: 0.95em;
+  margin-top: 5%;
+}
+
+#about-cap {
   font-size: 0.8em;
   font-style: italic;
-  padding-left: 20px;
+  padding-top: 20px;
   text-align: center;
   color: var(--heading-color);
 }
@@ -245,5 +255,17 @@ strong {
 }
 
 .carousel-indicators [data-bs-target] {
-  background-color: var(--accent-color);
+  background-color: var(--emphasis-color);
+}
+
+blockquote:before {
+  font-family: var(--body-font);
+  font-size: 10em;
+  content: "\201C";
+}
+
+blockquote:after {
+  font-family: var(--body-font);
+  font-size: 10em;
+  content: "\201D";
 }
