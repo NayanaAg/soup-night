@@ -28,18 +28,24 @@ body {
 
 h1 {
   font-family: var(--heading-font);
+  color: var(--heading-color);
   font-weight: 700;
   font-size: 3em;
-  color: var(--heading-color);
   margin: 50px 0;
 }
 
 h2 {
   font-family: var(--heading-font);
+  color: var(--heading-color);
   font-weight: 700;
   font-size: 2.4em;
-  color: var(--heading-color);
   margin-top: 10%;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  color: var(--emphasis-color);
+  font-weight: 700;
 }
 
 p {
@@ -150,6 +156,12 @@ strong {
   font-size: 5vw;
 }
 
+@media screen and (max-width:1300px) {
+  .countdown-style {
+    font-size: 7vw;
+  }
+}
+
 @media screen and (max-width:992px) {
   .countdown-style {
     font-size: 10vw;
@@ -168,7 +180,6 @@ strong {
   color: var(--emphasis-color);
   margin-top: -20px;
 }
-
 /*countdown end*/
 
 
@@ -188,6 +199,26 @@ strong {
   color: var(--heading-color);
   text-align: center;
   font-weight: 700;
+}
+
+.modal-content {
+  padding: 30px;
+}
+
+.close {
+  outline: none;
+  position: absolute;
+  right: 0;
+  font-size: 1.5em;
+  color: var(--accent-color);
+  border: none;
+  background-color: white;
+  margin-right: 1em;
+  transition: 0.5s;
+}
+
+.close:hover {
+  color: #b07e12;
 }
 
 /*quiz tile end*/

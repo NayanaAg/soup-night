@@ -21,8 +21,8 @@
     <!--linking custom javascript file-->
     <script type="text/javascript" src="../js/script.js"></script>
 
-     <!--linking fontawesome icons-->
-     <script src="https://kit.fontawesome.com/5ed86aad6e.js" crossorigin="anonymous"></script>
+    <!--linking fontawesome icons-->
+    <script src="https://kit.fontawesome.com/5ed86aad6e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -81,8 +81,27 @@
             </section>
             <section class="row justify-content-center">
                 <div class="col-md-3">
-                    <img class="quiz-tile" src="../img/autumn-tomato.jpg" alt="autumn leaves">
+                    <img class="quiz-tile" src="../img/autumn-tomato.jpg" alt="autumn leaves" type="button"
+                        data-bs-toggle="modal" data-bs-target="#modal-tomato-soup">
                     <p class="bold-caption">Crunchy autumn leaves</p>
+
+                    <div class="modal fade" id="modal-tomato-soup" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-tomato-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-tomato-title">Tomato soup</h3>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>As someone who enjoys warm and comforting flavours, tomato soup is the perfect choice for you! Its simple but delicious flavours make it one of the most popular classic soups in the world. Great choice!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <img class="quiz-tile" src="../img/study-frenchonion.jpg" alt="fancy wood study">
                     <p class="bold-caption">An elegant study</p>
@@ -137,12 +156,13 @@
     </div>
 
     <div class="row"></div>
-        <div class="col-12">
-            <footer>
-                <a href="https://www.linkedin.com/in/nayana-agrawal-855948175/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto: nayana.agrawal123@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            </footer>
-        </div>
+    <div class="col-12">
+        <footer>
+            <a href="https://www.linkedin.com/in/nayana-agrawal-855948175/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto: nayana.agrawal123@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </footer>
+    </div>
     </div>
 </body>
 
