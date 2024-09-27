@@ -75,12 +75,14 @@
                 <div class="col-md-10 offset-md-1">
                     <h2>Not sure what soup to bring?</h2>
                     <p>Worry not! I have prepared an extremely easy "quiz" for you to decide on a soup you can bring.
-                        Choose the image below that speaks to you the most, and I'll recommend you a soup based on it.
+                        Choose the image below that speaks to you the most, and I'll recommend you a soup based on its vibes.
                     </p>
                 </div>
             </section>
-            <section class="row justify-content-center">
-                <div class="col-md-3">
+            <section class="row justify-content-center" id="soup-quiz-section">
+
+                <!--tomato soup quiz tile + modal-->
+                <div class="col-md-4">
                     <img class="quiz-tile" src="../img/autumn-tomato.jpg" alt="autumn leaves" type="button"
                         data-bs-toggle="modal" data-bs-target="#modal-tomato-soup">
                     <p class="bold-caption">Crunchy autumn leaves</p>
@@ -101,22 +103,70 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <img class="quiz-tile" src="../img/study-frenchonion.jpg" alt="fancy wood study">
-                    <p class="bold-caption">An elegant study</p>
                 </div>
-                <div class="col-md-3">
-                    <img class="quiz-tile" src="../img/coaster-tomyum.jpg" alt="roller coaster">
-                    <p class="bold-caption">An exciting roller coaster</p>
 
+                <!--french onion soup quiz tile + modal-->
+                <div class="col-md-4">
+                    <img class="quiz-tile" src="../img/study-frenchonion.jpg" alt="fancy wood study" type="button"
+                    data-bs-toggle="modal" data-bs-target="#modal-french-onion">
+                    <p class="bold-caption">An elegant study</p>
+
+                    <div class="modal fade" id="modal-french-onion" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-onion-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-onion-title">French onion soup</h3>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>You enjoy the finer things in life, and this is true even for your soup choices. The complex, old-fashioned flavour of french onion soup suits you very well. Fun fact, this is also Wally's favourite soup, so you may end up competing with him to see who can make the frenchest and onionest soup.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--tom yum soup quiz tile + modal-->
+                <div class="col-md-4">
+                    <img class="quiz-tile" src="../img/coaster-tomyum.jpg" alt="roller coaster" type="button"
+                    data-bs-toggle="modal" data-bs-target="#modal-tomyum-soup">
+                    <p class="bold-caption">An exciting roller coaster</p>
+                </div>
+
+                <div class="modal fade" id="modal-tomyum-soup" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-tomyum-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-tomyum-title">Tom yum soup</h3>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>You are someone who enjoys the adrenalin rush of extreme sports (like eating food spicy enough to make you cry), and the strong hot and sour flavours of tom yum soup feel exactly like being on a rollercoaster. This is my favourite soup so you've objectively picked the best option of the six, congratulations! </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--minestrone soup quiz tile + modal-->
+                <div class="col-md-4">
                     <img class="quiz-tile" src="../img/christmas-minestrone.jpg" alt="christmas dinner with family">
                     <p class="bold-caption">Christmas with the family</p>
                 </div>
-                <div class="col-md-3">
+
+                <!--spinach soup quiz tile + modal-->
+                <div class="col-md-4">
                     <img class="quiz-tile" src="../img/forest-spinach.jpg" alt="dirt path in woods">
                     <p class="bold-caption">A peaceful nature walk</p>
+                </div>
 
+                <!--egg drop soup quiz tile + modal-->
+                <div class="col-md-4">
                     <img class="quiz-tile" src="../img/sunrise-eggdrop.jpg" alt="sunrise at the beach">
                     <p class="bold-caption">Sunrise by the beach</p>
                 </div>
