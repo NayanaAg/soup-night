@@ -15,6 +15,6 @@ A couple improvements I can make are:
 * connecting this site to my portfolio (under progress!) so people have a natural journey flow towards my professional content
 
 
-You can find my work process and more information on the design on this secondary page: nayanaag.github.io/soup-night/pages/process.html
+You can [see my work process page](https://nayanaag.github.io/soup-night/pages/process.html) for my mini sitemap, some wireframes, and color palette information.
 
 Thank you for visting, and I hope you liked the site! :)

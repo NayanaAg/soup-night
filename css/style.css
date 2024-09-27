@@ -386,3 +386,14 @@ i {
 i:hover {
   color: var(--action-color);
 }
+
+figure img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+figcaption {
+  text-align: center;
+  color: var(--heading-color);
+  font-style: italic;
+}
