@@ -30,8 +30,3 @@ var x = setInterval(function () {
     }
 }, 1000);
 // Countdown end
-
-
-$('.carousel').carousel({
-    interval: 2000
-})

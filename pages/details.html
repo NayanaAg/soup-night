@@ -58,14 +58,15 @@
 
             <section class="row">
                 <div class="col-md-10 offset-md-1">
-                    <h1>Here's what you need to know.</h1>
-                    <p>Text explanation of what soup night is, and a general list of our planned activities</p>
+                    <h1 id="detail-h1">Here's what you need to know.</h1>
+                    <p>Interested in soup night but don't know how to start? Don't worry, it's real easy! All you need to do is bring a bunch of your favourite soup for us to sample, and be prepared to discuss soup-based preferences and opinions.</p>
 
-                    <strong>When?</strong>
+                    <h3 class="info-title">When?</h3>
                     <p>5th November, 2024 at 5pm.</p>
-                    <strong>Where?</strong>
+                    <h3 class="info-title">Where?</h3>
                     <p>Hayley's House! (address not included because I don't want to dox her)</p>
-                    <strong>I want to RSVP!</strong> <a href="#">Please fill out this Google Form.</a>
+                    <h3 class="info-title">I want to RSVP!</h3>
+                    <a class="btn btn-primary" href="#">Please fill out this Google Form.</a>
 
                     <hr class="divider">
                 </div>
@@ -166,20 +167,74 @@
 
                 <!--minestrone soup quiz tile + modal-->
                 <div class="col-md-4">
-                    <img class="quiz-tile" src="../img/christmas-minestrone.jpg" alt="christmas dinner with family">
+                    <img class="quiz-tile" src="../img/christmas-minestrone.jpg" alt="christmas dinner with family" type="button"
+                    data-bs-toggle="modal" data-bs-target="#modal-minestrone-soup">
                     <p class="bold-caption">Christmas with the family</p>
+
+                    <div class="modal fade" id="modal-minestrone-soup" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-minestrone-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-minestrone-title">Minestrone</h3>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>You're someone who loves spending time with people, and the comforting, family-style Italian minestrone soup fits that perfectly. It's a soup that combines many different ingredients and flavours; the results could easily turn out chaotic, but somehow it's always warm and delicious! </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!--spinach soup quiz tile + modal-->
                 <div class="col-md-4">
-                    <img class="quiz-tile" src="../img/forest-spinach.jpg" alt="dirt path in woods">
+                    <img class="quiz-tile" src="../img/forest-spinach.jpg" alt="dirt path in woods" type="button"
+                    data-bs-toggle="modal" data-bs-target="#modal-spinach-soup">
                     <p class="bold-caption">A peaceful nature walk</p>
                 </div>
 
+                <div class="modal fade" id="modal-spinach-soup" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-spinach-title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-spinach-title">Spinach soup</h3>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some would say spinach soup is an unconventional choice, but I actually really enjoyed it when I tried it recently! It had a light, fresh, and herbal flavour, which reminds me of being on a relaxing nature trail through the woods. You're probably someone who enjoys spending quiet time in nature more than doing hectic city activties.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 <!--egg drop soup quiz tile + modal-->
                 <div class="col-md-4">
-                    <img class="quiz-tile" src="../img/sunrise-eggdrop.jpg" alt="sunrise at the beach">
+                    <img class="quiz-tile" src="../img/sunrise-eggdrop.jpg" alt="sunrise at the beach" type="button"
+                    data-bs-toggle="modal" data-bs-target="#modal-egg-soup">
                     <p class="bold-caption">Sunrise by the beach</p>
+
+                    <div class="modal fade" id="modal-egg-soup" tabindex="-1" role="dialog"
+                    aria-labelledby="modal-egg-title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="modal-egg-title">Egg drop soup</h3>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This picture is probably the least literal of the bunch -- something about the calm ocean with a sunrise just reminds me of an eggyolk gently dropping into a bowl of soup lol. The serene ocean matches the gentle taste of this soup -- it may not be the most exciting soup, but it's still one of the best!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
                 </div>
             </section>
 
@@ -201,7 +256,7 @@
                     <p class="bold-caption">Nayana (me!)</p>
                     <p class="chef-desc">My reputation as the group's "planner" comes from me wanting a group of friends
                         to have fun with. I picked some people who I thought would get along, invited them all to my
-                        graduation party, and we've been traveling together ever since. <a href="about.html">Learn more
+                        graduation party, and we've been traveling together ever since. <a href="about.html" id="inline-url">Learn more
                             about me.</a></p>
                 </div>
                 <div class="col-md-3">

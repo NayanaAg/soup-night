@@ -34,6 +34,10 @@ h1 {
   margin: 50px 0;
 }
 
+#detail-h1 {
+  margin-bottom: 10px;
+}
+
 h2 {
   font-family: var(--heading-font);
   color: var(--heading-color);
@@ -48,6 +52,10 @@ h3 {
   font-weight: 700;
 }
 
+.info-title {
+  margin-top: 3%;
+}
+
 p {
   font-family: var(--body-font);
   font-size: 1.1em;
@@ -60,11 +68,49 @@ p {
 
 strong {
   color: var(--emphasis-color);
+  font-family: var(--body-font);
+  font-size: 1.2em;
+  display: inline;
 }
 
 .divider {
   border: 2px solid black;
   margin: 20px;
+}
+
+#inline-url {
+  color: var(--action-color);
+  font-weight: 600;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+#inline-url:hover {
+  color: black;
+  background-color: var(--action-color);
+  text-decoration: none;
+}
+
+.btn-primary {
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--action-color);
+  color: black;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px 0;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: #37705d;
+  color: white;
 }
 
 /*global navigation styles*/
@@ -114,34 +160,11 @@ strong {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 /*navigation end*/
 
 
 .headimage {
   width: 100%;
-}
-
-.btn-primary {
-  font-family: var(--heading-font);
-  font-size: 1.5em;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 10px;
-  background-color: var(--action-color);
-  color: black;
-  display: block;
-  text-align: center;
-  border-radius: 20px;
-  margin: 40px 0;
-  transition: 0.5s;
-  border: none;
-  outline: none;
-}
-
-.btn-primary:hover {
-  background-color: #37705d;
-  color: white;
 }
 
 
@@ -156,7 +179,7 @@ strong {
   font-size: 5vw;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1000px) {
   .countdown-style {
     font-size: 7vw;
   }
@@ -288,6 +311,7 @@ strong {
 
 .carousel-indicators [data-bs-target] {
   background-color: var(--emphasis-color);
+  width: 20px;
 }
 
 blockquote {
