@@ -1,3 +1,4 @@
+/*remove existing padding and margin, setup site for custom spacing*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -69,6 +70,10 @@ h3 {
   h2 {
     font-size: 2em;
   }
+}
+
+.headimage {
+  width: 100%;
 }
 
 .info-title {
@@ -193,11 +198,6 @@ strong {
 /*navigation end*/
 
 
-.headimage {
-  width: 100%;
-}
-
-
 /*countdown timer style*/
 .countdown-style {
   font-family: "Anonymous Pro", serif;
@@ -209,7 +209,7 @@ strong {
   font-size: 5vw;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
   .countdown-style {
     font-size: 7vw;
   }
@@ -292,7 +292,7 @@ strong {
 }
 
 .chef-desc {
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0;
   margin-bottom: 50px;
 }
