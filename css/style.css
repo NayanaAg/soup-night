@@ -397,6 +397,15 @@ label {
   font-weight: 600;
 }
 
+input [required] {
+  display: block;
+}
+
+input [required]::after {
+  content: '*';
+  color: var(--emphasis-color);
+}
+
 #form-submit {
   margin-top: 5%;
   margin-bottom: 0;
