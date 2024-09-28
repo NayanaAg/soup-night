@@ -27,7 +27,7 @@ body {
   max-width: 70%;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
   #style-page {
     max-width: 100%;
     margin: 0;
@@ -61,7 +61,7 @@ h3 {
   font-weight: 700;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
   h1 {
     margin: 30px 0;
     font-size: 2.5em; 
@@ -69,6 +69,7 @@ h3 {
 
   h2 {
     font-size: 2em;
+    margin-top: 50px;
   }
 }
 
@@ -185,7 +186,7 @@ strong {
   transform-origin: bottom left;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
   #globalnav ul {
     text-align: center;
   }
@@ -374,6 +375,23 @@ blockquote:after {
   font-size: 6em;
   content: "\201D";
 }
+
+@media screen and (max-width: 900px) {
+  blockquote {
+    text-align: left;
+  }
+
+  blockquote:before {
+    font-size: 4em;
+    line-height: 0.5;
+  }
+
+  blockquote:after {
+    padding-left: 20px;
+    font-size: 4em;
+    line-height: 1.5;
+  }
+}
 /*testimonial end*/
 
 /*contact form*/
@@ -397,11 +415,7 @@ label {
   font-weight: 600;
 }
 
-input [required] {
-  display: block;
-}
-
-input [required]::after {
+.label-required::after {
   content: '*';
   color: var(--emphasis-color);
 }
@@ -420,7 +434,7 @@ footer {
   justify-content: flex-end;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
   footer {
     position: static;
     background-color: var(--heading-color);
